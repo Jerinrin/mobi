@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>mob</title>
+
+        <style>
+          *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            
+          }
+          button {
+           width: 200px;
+            font-size: 20px;
+            padding: 10px;
+            text-align: justify;
+        
+          }
+          .fa {
+            margin-right: 12px;
+          }
+          .a1 {
+            text-align: center;
+            margin-top: 280px;
+          }
+          .x1 {
+
+            margin-top: 18px;
+            background-color: rgb(0, 191, 255);
+
+          }
+          .x1:hover{
+            color: blue;
+             box-shadow:3px 3px 5px 4px rgba(0, 0, 0, 0.343);
+          }
+
+          input {
+            font-size: 22px;
+            margin-top: 20px;
+          }
+          .output {
+            margin-left: 300px;
+            margin-top: 200px;
+            
+            height: 100px;
+          
+            
+            
+          
+          }
+          .all {
+            display: flex;
+            margin-left: 0px;
+            height: 100%!important;
+            background-size: cover;
+          }
+
+          .body {
+           background-color: rgb(0, 191, 255);
+           padding: 50px;
+           margin-top: -10px;
+           margin-left: -10px;
+           height: 1000px;
+       
+          }
+          body {
+            background-color: rgb(136, 207, 240);
+          }
+
+          input {
+            background-color: transparent;
+            text-align: center;
+          }
+         
+          
+
+        </style>
+    </head>
+
+    <body>
+      <div class="all">  
+      <div class="body">
+       <button class="x1" id="z1" onclick="touch()"><i class="fa fa-user-circle-o" aria-hidden="true"></i>  User name</button><br>
+    
+      
+       <button class="x1" onclick="touch1()" id="z2"><i class="fa fa-envelope" aria-hidden="true"></i>E-mail</button><br>
+
+      <button class="x1" onclick="touch2()" id="z3"><i class="fa fa-unlock-alt" aria-hidden="true"></i>Password</button><br>
+      
+      <button class="x1" onclick="touch3()" id="z4"><i class="fa fa-male" aria-hidden="true"></i>Gender</button><br>
+
+      <button type="number" class="x1" onclick="touch4()" id="z5"><i class="fa fa-mobile" aria-hidden="true"></i>enter your no</button>
+      <br><br>
+    <br></div>
+
+      <div class="output">
+        <p id="a"></p>
+        </div>
+      </div>
+       
+    </body>
+
+    
+    <script>
+        
+        function touch(){
+            let a="<h2>enter your name</h2>"
+            a=a+"<input type=text placeholder=name>"
+
+            document.getElementById("a").innerHTML=a;
+        }
+
+        function touch1(){
+          let a="<h2>enter your email id</h2>"
+          a=a+"<input type=text placeholder=gmail>"
+          document.getElementById("a").innerHTML=a;
+        }
+
+        function touch2(){
+          let a="<h2>enter your password</h2>"
+          a=a+"<input type=password placeholder=password>"
+            document.getElementById("a").innerHTML=a;
+        }
+
+        function touch3(){
+          let a="<h2>gender</h2>"
+          a=a+"<input type=radio value=male name=sex><label>male</label> &emsp13; <input type=radio value=female name=sex><label>female</label> &emsp13;<input type=radio value=other name=sex><label>other</label>"
+          document.getElementById("a").innerHTML=a;
+        }
+
+        function touch4(){
+          let a="<h2>mobile number</h2>"
+          a=a+"<input type=number placeholder=number>"
+          document.getElementById("a").innerHTML=a;
+        }
+    </script>
+</html>
